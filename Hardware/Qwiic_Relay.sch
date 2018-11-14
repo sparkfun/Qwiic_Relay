@@ -28398,7 +28398,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <gate name="U1" symbol="ATTINY85_ATTINY85" x="-10.16" y="5.08"/>
 </gates>
 <devices>
-<device name="_SOIC_5.3MM" package="ATTINY85">
+<device name="" package="ATTINY85">
 <connects>
 <connect gate="U1" pin="GND" pad="4"/>
 <connect gate="U1" pin="PB0" pad="5"/>
@@ -28692,7 +28692,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="JP10" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_NO-SILK"/>
 <part name="GND9" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="J5" library="SparkFun-Connectors" deviceset="CONN_03" device="-SCREW-5MM"/>
-<part name="U3" library="SparkFun-IC-Microcontroller" deviceset="ATTINY85" device="_SOIC_5.3MM"/>
+<part name="U3" library="SparkFun-IC-Microcontroller" deviceset="ATTINY85" device=""/>
 <part name="LOGO2" library="SparkFun-Aesthetics" deviceset="REVISION" device=""/>
 <part name="GND2" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 </parts>
@@ -28763,10 +28763,11 @@ Coil Resistance: 23.5 Ohms</text>
 <instance part="R7" gate="G$1" x="101.6" y="66.04" rot="R90"/>
 <instance part="JP7" gate="G$1" x="93.98" y="73.66" smashed="yes" rot="R270">
 <attribute name="NAME" x="91.44" y="69.342" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="93.599" y="71.12" size="1.778" layer="96" font="vector" rot="R270" align="top-left"/>
 </instance>
 <instance part="SUPPLY9" gate="G$1" x="93.98" y="81.28"/>
-<instance part="J4" gate="G$1" x="68.58" y="20.32"/>
+<instance part="J4" gate="G$1" x="68.58" y="20.32" smashed="yes">
+<attribute name="NAME" x="63.5" y="25.908" size="1.778" layer="95" font="vector"/>
+</instance>
 <instance part="R8" gate="G$1" x="66.04" y="73.66" rot="R270"/>
 <instance part="SUPPLY10" gate="G$1" x="66.04" y="81.28"/>
 <instance part="R9" gate="G$1" x="33.02" y="55.88" rot="R270"/>
