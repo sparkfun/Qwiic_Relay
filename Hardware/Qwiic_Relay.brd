@@ -192,7 +192,7 @@ Table 6-1 : Electrical Conductor Spacing
 6.3.2 B2-External conductors, Uncoated, Seal Level to 3050 m
  300 to 500 V below 3050 m
  2.5 mm &gt;= Clearance</text>
-<text x="9.779" y="28.956" size="0.508" layer="46" font="vector" ratio="15" rot="R90">route out</text>
+<text x="9.779" y="28.956" size="0.508" layer="20" font="vector" ratio="15" rot="R90">route out</text>
 <text x="7.62" y="2.54" size="0.508" layer="27" font="vector" ratio="15">3 Pin 5mm Screw Terminal</text>
 <text x="7.62" y="20.32" size="0.508" layer="27" font="vector" ratio="15">3V Relay</text>
 <text x="10.922" y="41.148" size="0.508" layer="27" font="vector" ratio="15">ATTiny85</text>
@@ -6613,7 +6613,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <contactref element="U3" pad="4"/>
 <via x="8.001" y="43.942" extent="1-16" drill="0.381"/>
 <via x="9.398" y="45.339" extent="1-16" drill="0.381"/>
-<via x="7.493" y="38.989" extent="1-16" drill="0.381"/>
+<via x="5.969" y="39.243" extent="1-16" drill="0.381"/>
 </signal>
 <signal name="RELAY_CTR">
 <contactref element="R2" pad="2"/>
@@ -6852,6 +6852,12 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <approved hash="19,1,ddcdc66e385c21d1"/>
 <approved hash="19,1,1fc8c06b3e58e3d5"/>
 <approved hash="19,1,2a0df1820db1d410"/>
+<approved hash="23,1,ec2ae0f0d285919e"/>
+<approved hash="23,1,487c0d1e11f8bfbe"/>
+<approved hash="23,1,d5abc55bc0d2d022"/>
+<approved hash="23,1,cbeedb1eda87ca77"/>
+<approved hash="23,1,0b1686e683670e97"/>
+<approved hash="23,1,473e83cbdc5bffc3"/>
 </errors>
 </board>
 </drawing>
