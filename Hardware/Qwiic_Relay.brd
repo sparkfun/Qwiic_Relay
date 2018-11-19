@@ -6532,7 +6532,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <element name="U$25" library="buzzard_labels (12)" package="STAT1" value="" x="20.066" y="39.878" rot="R90"/>
 <element name="LOGO2" library="SparkFun-Aesthetics" package="REVISION" value="REVISION" x="-5.08" y="-11.43"/>
 <element name="U$10" library="SparkFun-Aesthetics" package="ORDERING_INSTRUCTIONS" value="" x="-34.29" y="-13.97"/>
-<element name="U$26" library="buzzard_labels (13)" package="WARNING#_HIGH_VOLTAGE0" value="" x="12.7" y="30.48" rot="MR270"/>
+<element name="U$26" library="buzzard_labels (13)" package="WARNING#_HIGH_VOLTAGE0" value="" x="11.43" y="31.75" rot="MR270"/>
 <element name="U$27" library="buzzard_labels (15)" package="HV2" value="" x="22.987" y="37.973" rot="MR270"/>
 <element name="U$28" library="buzzard_labels (15)" package="LV1" value="" x="22.987" y="43.053" rot="MR270"/>
 </elements>
@@ -6852,12 +6852,6 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <approved hash="19,1,ddcdc66e385c21d1"/>
 <approved hash="19,1,1fc8c06b3e58e3d5"/>
 <approved hash="19,1,2a0df1820db1d410"/>
-<approved hash="23,1,ec2ae0f0d285919e"/>
-<approved hash="23,1,487c0d1e11f8bfbe"/>
-<approved hash="23,1,d5abc55bc0d2d022"/>
-<approved hash="23,1,cbeedb1eda87ca77"/>
-<approved hash="23,1,0b1686e683670e97"/>
-<approved hash="23,1,473e83cbdc5bffc3"/>
 </errors>
 </board>
 </drawing>
