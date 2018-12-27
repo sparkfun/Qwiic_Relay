@@ -6440,7 +6440,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 </element>
 <element name="K1" library="SparkFun-Electromechanical" package="RELAY_G5LE" value="RELAY-SPDT" x="12.7" y="25.4" smashed="yes" rot="R90">
 <attribute name="NAME" x="3.81" y="13.97" size="1.27" layer="25" font="vector" rot="R90"/>
-<attribute name="PROD_ID" value="COM-14146" x="12.7" y="25.4" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PROD_ID" value="COMP-14214" x="12.7" y="25.4" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="22.86" y="13.97" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="R1" library="SparkFun-Resistors" package="0603" value="10" x="2.54" y="40.64" smashed="yes">
