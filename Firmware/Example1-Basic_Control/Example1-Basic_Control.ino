@@ -44,7 +44,9 @@ void loop() {
 void relayOn() {
   Wire.beginTransmission(qwiicRelayAddress);
   Wire.write(COMMAND_RELAY_ON);
-  Wire.endTransmission();
+  if (Wire.endTransmission() != 0) {
+    Serial.println("Check Connections. No slave attached.");
+  }
 }
 
 
@@ -54,7 +56,9 @@ void relayOn() {
 void relayOff() {
   Wire.beginTransmission(qwiicRelayAddress);
   Wire.write(COMMAND_RELAY_OFF);
-  Wire.endTransmission();
+  if (Wire.endTransmission() != 0) {
+    Serial.println("Check Connections. No slave attached.");
+  }
 }
 
 

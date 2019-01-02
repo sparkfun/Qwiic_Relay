@@ -25,7 +25,7 @@
 
 
 
-volatile byte qwiicRelayAddress = 0x19;     //Default Address
+volatile byte qwiicRelayAddress = 0x18;     //Default Address
 
 
 void setup() {
@@ -39,23 +39,25 @@ void setup() {
   if (Wire.endTransmission() != 0 ) {
     Serial.println("Check Connections. Slave not found.");
   }
-
-  Serial.println("Qwiic Relay found!");
-
-  relayOn(); // Turn on the Relay (at address 0x18)
-  delay(1000);
-  byte error = changeAddress(0x18); // Change the Relay's address to 0x19
-  relayOff(); // Turn off the Relay (at address 0x19)
-  delay(1000);
-  changeAddress(0x00); // Try to change address to Invalid Address.
-
+  else {
+    Serial.println("Qwiic Relay found!");
+  }
+  
+  boolean error = changeAddress(0x19); // Change the Relay's address to 0x19
+  
   if (error != true) {
     Serial.println("!!!!! invalid address" );
   }
-  Serial.println("success");
+  else {
+    Serial.println("success");
+  }
 }
 
-void loop() {
+void loop() { //Toggle the Relay on the new address
+  relayOn();
+  delay(2000);
+  relayOff();
+  delay(2000);
 }
 
 
@@ -68,13 +70,6 @@ void loop() {
 // This function returns true if successful and
 // false if unsuccessful.
 boolean changeAddress(byte address) {
-  Wire.beginTransmission(qwiicRelayAddress);
-  //check here for an ACK from the slave
-  if (Wire.endTransmission()  != 0) {
-    Serial.println("Check Connections. No slave found.");
-    return (false);
-  }
-
   //check if valid address.
   if (address < 0x07 || address > 0x78) {
     Serial.println("Invalid I2C address");
@@ -85,8 +80,11 @@ boolean changeAddress(byte address) {
   Wire.write(COMMAND_CHANGE_ADDRESS);
   qwiicRelayAddress = address;
   Wire.write(qwiicRelayAddress);
-  Wire.endTransmission();
-  return (true); //Success!
+  if (Wire.endTransmission() != 0)
+  {
+    return false;
+  }
+  return true;//success
 }
 
 
@@ -98,15 +96,19 @@ boolean changeAddress(byte address) {
 void relayOn() {
   Wire.beginTransmission(qwiicRelayAddress);
   Wire.write(COMMAND_RELAY_ON);
-  Wire.endTransmission();
+  if (Wire.endTransmission() != 0) {
+    Serial.println("Check Connections. No slave attached");
+  }
 }
 
 
-// RelayOff() turns off the relay at the SLAVE_ADDRESS
+// RelayOff() turns off the relay at the qwiicRelayAddress
 // Checks to see if a slave is connected and prints a
 // message to the Serial Monitor if no slave found.
 void relayOff() {
   Wire.beginTransmission(qwiicRelayAddress);
   Wire.write(COMMAND_RELAY_OFF);
-  Wire.endTransmission();
+  if (Wire.endTransmission() != 0) {
+    Serial.println("Check Connections. No slave attached");
+  }
 }
