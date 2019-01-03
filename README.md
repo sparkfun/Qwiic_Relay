@@ -1,9 +1,9 @@
-SparkFun Qwiic Relay
+SparkFun Qwiic Single Relay
 ========================================
 
-![SparkFun Qwiic Relay](https://cdn.sparkfun.com/assets/parts/1/3/4/5/1/15093-SparkFun_Qwiic_Single_Relay-01.jpg)
+![SparkFun Qwiic Single Relay](https://cdn.sparkfun.com/assets/parts/1/3/4/5/1/15093-SparkFun_Qwiic_Single_Relay-01.jpg)
 
-[*SparkFun Qwiic Relay (COM-15093)*](https://www.sparkfun.com/products/15093)
+[*SparkFun Qwiic Single Relay (COM-15093)*](https://www.sparkfun.com/products/15093)
 Have you ever wanted to control something powerful? Have you ever needed to turn on/off a high voltage device from your Arduino? Now you can with the Qwiic Relay! This device allows you to control large power loads with simple I<sup>2</sup>C commands. The Qwiic Relay can handle 10 Amps at 120 Volts AC, perfect for large inductive loads like DC motors or blenders.
 
 The Qwiic Relay comes with a default I<sup>2</sup>C address but can be changed with a simple command allowing you to control over 100 Qwiic Relays on a single bus!<sup>[1](#powerWarning)</sup>
