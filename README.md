@@ -25,6 +25,10 @@ Documentation
 --------------
 * **[Hookup Guide](https://learn.sparkfun.com/tutorials/qwiic-single-relay-hookup-guide)** - Basic hookup guide
 
+Arduino Library
+--------------
+* **[SparkFun Qwiic Relay Arduino Library](https://github.com/sparkfun/SparkFun_Qwiic_Relay_Arduino_Library)** - SparkFun Arduino Library for controlloing the Qwiic Single and Quad Relay
+
 License Information
 -------------------
 
